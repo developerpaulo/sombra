@@ -475,7 +475,7 @@ export function OpportunityRadar({ initialLeads, templates }: { initialLeads: Le
                 {queries.map((query) => (
                   <article key={`${query.source}-${query.query}`} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-soft transition hover:-translate-y-1 hover:border-emerald-200">
                     <p className="font-bold text-slate-950">{query.source}</p>
-                    <p className="mt-2 text-sm font-medium text-slate-700">"{query.query}"</p>
+                    <p className="mt-2 text-sm font-medium text-slate-700">&quot;{query.query}&quot;</p>
                     <p className="mt-2 text-sm text-slate-500">{query.description}</p>
                     <div className="mt-4 flex flex-wrap gap-2">
                       <a href={query.url} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 rounded-md bg-emerald-600 px-3 py-2 text-xs font-semibold text-white hover:bg-emerald-700"><ExternalLink size={13} /> Abrir pesquisa</a>
@@ -541,7 +541,7 @@ export function OpportunityRadar({ initialLeads, templates }: { initialLeads: Le
             </div>
             <div className="mt-4 rounded-xl bg-amber-50 p-4">
               <p className="font-semibold text-amber-950">Objeção provável</p>
-              <p className="mt-2 text-sm text-amber-800">"Ja tenho Instagram."</p>
+              <p className="mt-2 text-sm text-amber-800">&quot;Ja tenho Instagram.&quot;</p>
               <p className="mt-3 font-semibold text-amber-950">Resposta sugerida</p>
               <p className="mt-1 text-sm text-amber-800">O Instagram ajuda, mas um site profissional passa mais confianca, aparece no Google e organiza servicos, localizacao e WhatsApp em um so lugar.</p>
             </div>
